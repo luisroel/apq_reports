@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AQP_Areas" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="320aef4e-73b7-4ada-9c09-852c02dc0e12">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySql Server"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8081/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="jasperadmin"/>
+	<property name="ireport.jasperserver.reportUnit" value="/APQ/Version2/Charts/AQP_Areas"/>
+	<property name="ireport.jasperserver.report.resource" value="/APQ/Version2/Charts/AQP_Areas_files/main_jrxml"/>
+	<parameter name="idruntime" class="java.lang.Long"/>
+	<parameter name="area" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[call `spapq_rpt_apqbyarea`($P{idruntime}, $P{area});]]>
+	</queryString>
+	<field name="idruntime" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="idruntime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="time" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="area" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="schedule_loss" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="schedule_loss"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="schedule_loss_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="schedule_loss_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="schedule_loss_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="schedule_loss_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_stop" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="planned_stop"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_stop_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_stop_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_stop_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_stop_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="total_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="total_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="total_time_chart" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="total_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time_p" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time_p"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time_p_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time_p_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_iddle_time_p_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_iddle_time_p_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time_p" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time_p"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time_p_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time_p_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="planned_production_time_p_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="planned_production_time_p_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="time_for_production" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="time_for_production"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="stop_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="stop_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="stop_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="stop_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="stop_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="stop_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="runtime" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="runtime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="runtime_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="runtime_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="runtime_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="runtime_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="availability_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="availability_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="ia_index" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="ia_index"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_setup_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_setup_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_setup_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_setup_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_setup_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_setup_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_start_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_start_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_start_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_start_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_start_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_start_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_total_count_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_total_count_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_total_count_time_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_total_count_time_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_total_count_time_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_total_count_time_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="nom_prod_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="nom_prod_time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="ip_index" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="ip_index"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="bad_count" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="bad_count"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="bad_count_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="bad_count_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="bad_count_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="bad_count_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="good_count" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="good_count"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="good_count_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="good_count_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="good_count_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="good_count_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="total_count" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="total_count"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="iq_index" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="iq_index"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="apq_chart" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="apq_chart"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="apq_label" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="apq_label"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="apq" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="apq"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_fields_level5byarea"/>
+	</field>
+	<field name="COLUMN_55" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="idruntime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_datachartbyarea"/>
+	</field>
+	<field name="COLUMN_56" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_datachartbyarea"/>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="title"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_datachartbyarea"/>
+	</field>
+	<field name="value1" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="value1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_datachartbyarea"/>
+	</field>
+	<field name="pos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="v_apq_get_datachartbyarea"/>
+	</field>
+	<group name="grparea">
+		<groupExpression><![CDATA[$F{area}]]></groupExpression>
+		<groupHeader>
+			<band height="554">
+				<staticText>
+					<reportElement mode="Opaque" x="630" y="180" width="150" height="20" backcolor="#EBE8E8" uuid="e1ec50cb-0c3d-4f6b-ab0b-60ead679e7b6"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[7. Index (APQ)]]></text>
+				</staticText>
+				<textField pattern="#,##0.0%">
+					<reportElement x="630" y="120" width="150" height="60" uuid="bfba5dae-1e1b-4e8c-b147-7069786393d9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="19" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{apq_label}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="630" y="0" width="150" height="40" backcolor="#E8E8E8" uuid="ffc99b13-eaf5-439f-9f27-33932e816b9b"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="20"/>
+					</textElement>
+					<text><![CDATA[Area]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="630" y="40" width="150" height="80" uuid="b87e38be-15ce-48e0-949c-a6ffc60bf3da"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="24"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{area}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement x="10" y="0" width="100" height="110" uuid="dfccb872-7ccf-453b-b101-77a70c271acc"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement x="110" y="160" width="130" height="20" uuid="e964291a-90b2-4181-baa3-f793dc2814ff"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement x="240" y="160" width="80" height="20" uuid="18961932-4a3e-48be-98f5-03a2aa04287e"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{planned_production_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement x="370" y="160" width="80" height="20" uuid="e8681f87-fa5c-4a42-bdbb-f42d21b018d9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_prod_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement x="500" y="160" width="130" height="20" uuid="8392a806-4e5b-4d3a-958c-4b24e0796222"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total_count}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="110" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="0f2787b5-3e54-46ed-affd-cf5dff7ff912"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Planned Prod.]]></text>
+				</staticText>
+				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="110" y="120" width="80" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="1193110c-df3b-4016-b869-bb116482657e"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{planned_production_time}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="110" y="60" width="130" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="7196930a-672e-4faa-9736-da1ced9a8238"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Planned Stops]]></text>
+				</staticText>
+				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="110" y="40" width="80" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="c5ba0aae-c967-4da3-b52b-cdcd2413b18b"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{planned_stop}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="110" y="20" width="130" height="20" backcolor="rgba(255, 0, 0, 0.78431374)" uuid="dab03a45-9a6c-471f-891e-1db9017830b3"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Schedule Loss]]></text>
+				</staticText>
+				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="110" y="0" width="80" height="20" backcolor="rgba(255, 0, 0, 0.78431374)" uuid="e2c93854-7caf-45b4-84de-c430d3a22061"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{schedule_loss}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="240" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="0701e055-3f10-46d6-9195-d5cf330a4172"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Runtime]]></text>
+				</staticText>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="240" y="120" width="80" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="a4a60ec9-15b0-4e8d-8a94-c0bc3200ffb2"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{runtime}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="240" y="100" width="130" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="0c07e7c8-da1a-4f91-9a01-45a3c286daec"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Stops]]></text>
+				</staticText>
+				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="240" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="191b2be8-e12e-4c31-bb2d-b9d8b6a730e7"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{stop_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="190" y="0" width="50" height="20" backcolor="rgba(255, 0, 0, 0.78431374)" uuid="c53048e6-065c-4d79-ab82-0ab9e65aa447"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{schedule_loss_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement positionType="FixRelativeToBottom" stretchType="ElementGroupHeight" mode="Opaque" x="190" y="40" width="50" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="bda68c45-4726-4665-9642-77481f8ef02d"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{planned_stop_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="190" y="120" width="50" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="bb546c9a-f0a5-4401-aca4-d7e0ef016e2d"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{planned_production_time_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="320" y="80" width="50" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="371c990c-8704-4a3d-9cb9-ce13df761e6f"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{stop_time_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="320" y="120" width="50" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="444c7bae-fc19-4542-a1d0-05486d297119"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{runtime_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="580" y="120" width="50" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="d93f4bdf-7e1b-4ccb-9eb7-7d8e984c2c04"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{good_count_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0%">
+					<reportElement x="10" y="110" width="100" height="70" uuid="54b43254-e3c1-46e6-8169-a3fe2ab92184"/>
+					<box>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top"/>
+					<textFieldExpression><![CDATA[1]]></textFieldExpression>
+				</textField>
+				<textField pattern="MMM d, yyyy h:mm:ss a" isBlankWhenNull="true">
+					<reportElement x="420" y="0" width="210" height="40" uuid="5c13a469-497c-4bd3-9ad8-1e77a378e265"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="240" y="0" width="180" height="40" backcolor="#E8E8E8" uuid="baaf07dc-a5d5-4a9e-828d-c464b7047e73"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DATE/TIME:]]></text>
+				</staticText>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="370" y="120" width="80" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="96ef6f05-20ef-4407-bb27-829fd7a10c22"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_total_count_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="450" y="120" width="50" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="7c16a73e-3418-41c9-92a6-bb0b1d5d4de5"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_total_count_time_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="370" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="25ba7dd2-3788-4775-940c-ed06e7fba656"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_start_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="450" y="80" width="50" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="92205b0b-0153-4eec-bed3-29abd06b3b88"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_start_time_label}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="370" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="4ac3fb7b-a49a-4540-9944-420f062fdf9a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nom. Count Time]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="370" y="100" width="130" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="ad7cf5df-d1ba-4ab9-b038-36892b0313fc"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Start Time]]></text>
+				</staticText>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="500" y="120" width="80" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="5ced5a89-d9e0-486c-9bab-fab15b924ccb"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bad_count}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="500" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="54b0cdf0-385c-4a6d-ad8d-eb4fbbaa5060"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Good Parts Time]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="500" y="100" width="130" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="f307e0af-7e13-4ff3-97cb-bd35ec921641"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[NG Parts Time]]></text>
+				</staticText>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="500" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="5c5db16d-d0da-4b48-9242-ab8b070b5e64"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bad_count}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="580" y="80" width="50" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="d0738f91-0197-46d8-a66a-a60ab4d1d679"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bad_count_label}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="110" y="100" width="130" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="5d3c5927-2f74-4438-959f-d0a8aed76a44"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Iddle Time]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="10" y="180" width="100" height="20" backcolor="#EBE8E8" uuid="9c6caa3c-805c-47fb-9e3b-9c2673a296db"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[1. Total]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="110" y="180" width="130" height="20" backcolor="#EBE8E8" uuid="33971fb5-09bf-4abc-9621-5c6b23d82890"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[2. Schedule]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="240" y="180" width="130" height="20" backcolor="#EBE8E8" uuid="c2fe3524-2375-488d-ac9b-2d4c32215b3e"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[4. Available (A)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="370" y="180" width="130" height="20" backcolor="#EBE8E8" uuid="63fd53b5-431c-42a5-942b-5b54699141e9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[5. Performance (P)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="500" y="180" width="130" height="20" backcolor="#EBE8E8" uuid="0859a6f3-12a1-4743-928c-e0ed189cd83b"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[6. Quality (Q)]]></text>
+				</staticText>
+				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+					<reportElement mode="Opaque" x="110" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="5227fdd6-a35f-419f-ad2d-45e62b15a70a"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_iddle_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="190" y="80" width="50" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="3bb201f6-8605-4ede-bc59-c1039e57daed"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_iddle_time_label}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,###,##0">
+					<reportElement mode="Opaque" x="370" y="40" width="80" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="293e3273-1550-433c-9310-798add20d495"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_setup_time}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement mode="Opaque" x="450" y="40" width="50" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="8b41acba-6152-4362-8fe3-44e29d139bcf"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nom_setup_time_label}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="370" y="60" width="130" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="6531d787-573d-4db0-ad09-34f38fd219d9"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Setup Time]]></text>
+				</staticText>
+				<textField pattern="#,##0.0%">
+					<reportElement x="320" y="160" width="50" height="20" uuid="4426587e-db5e-4d3a-afe6-467630355482"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ia_index}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.0%">
+					<reportElement x="450" y="160" width="50" height="20" uuid="fb3e8f4e-81ba-4ea3-a932-a1265a829d27"/>
+					<box>
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{ip_index}]]></textFieldExpression>
+				</textField>
+				<stackedBar3DChart>
+					<chart isShowLegend="false" evaluationTime="Group" evaluationGroup="grparea" hyperlinkType="ReportExecution" hyperlinkTarget="Blank" renderType="svg" theme="aegean">
+						<reportElement key="" x="10" y="209" width="770" height="342" uuid="170c2929-b676-4943-9bd3-b47cf47ddd48"/>
+						<box>
+							<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<chartTitle/>
+						<chartSubtitle/>
+						<chartLegend/>
+						<hyperlinkParameter name="_report">
+							<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Charts/AQP_Lines"]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="idruntime">
+							<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="line">
+							<hyperlinkParameterExpression><![CDATA[0]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="area">
+							<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+					</chart>
+					<categoryDataset>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{pos}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{title}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{value1}]]></valueExpression>
+						</categorySeries>
+					</categoryDataset>
+					<bar3DPlot isShowLabels="false">
+						<plot backgroundAlpha="1.0" foregroundAlpha="0.6">
+							<seriesColor seriesOrder="0" color="#00CC00"/>
+							<seriesColor seriesOrder="1" color="#FFFF66"/>
+							<seriesColor seriesOrder="2" color="#FF9933"/>
+							<seriesColor seriesOrder="3" color="#FF0000"/>
+						</plot>
+						<itemLabel/>
+						<categoryAxisFormat>
+							<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+						</categoryAxisFormat>
+						<valueAxisFormat>
+							<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+						</valueAxisFormat>
+					</bar3DPlot>
+				</stackedBar3DChart>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+</jasperReport>
