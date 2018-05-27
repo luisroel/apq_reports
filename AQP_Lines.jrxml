@@ -975,10 +975,19 @@
 						<chartSubtitle/>
 						<chartLegend/>
 						<hyperlinkParameter name="_report">
-							<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Charts/AQP_Areas"]]></hyperlinkParameterExpression>
+							<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Charts/AQP_Equipment"]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="idruntime">
+							<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
 						</hyperlinkParameter>
 						<hyperlinkParameter name="area">
-							<hyperlinkParameterExpression><![CDATA[0]]></hyperlinkParameterExpression>
+							<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="line">
+							<hyperlinkParameterExpression><![CDATA[$F{line}]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="idequipment">
+							<hyperlinkParameterExpression><![CDATA["%"]]></hyperlinkParameterExpression>
 						</hyperlinkParameter>
 					</chart>
 					<categoryDataset>

@@ -8,6 +8,7 @@
 	<property name="ireport.jasperserver.reportUnit" value="/APQ/Version2/Charts/AQP_Equipment"/>
 	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="169"/>
 	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="821"/>
+	<property name="ireport.jasperserver.report.resource" value="/APQ/Version2/Charts/AQP_Equipment_files/main_jrxml"/>
 	<parameter name="idruntime" class="java.lang.Long"/>
 	<parameter name="area" class="java.lang.Integer"/>
 	<parameter name="line" class="java.lang.Integer"/>
@@ -416,7 +417,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_prod_time}]]></textFieldExpression>
 				</textField>
-				<textField pattern="#,###,##0">
+				<textField pattern="#,###,##0" hyperlinkType="ReportExecution" hyperlinkTarget="Blank">
 					<reportElement x="500" y="160" width="130" height="20" uuid="54b6d8e2-9b87-4281-b247-8d2800a9d82a"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -428,6 +429,21 @@
 						<font size="14"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{total_count}]]></textFieldExpression>
+					<hyperlinkParameter name="_reports">
+						<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Reports/spAPQ_Rpt_Counts"]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idruntime">
+						<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="area">
+						<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="line">
+						<hyperlinkParameterExpression><![CDATA[$F{line}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idequipment">
+						<hyperlinkParameterExpression><![CDATA[$F{idequipment}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="110" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="c2f5550c-b491-4dc6-a674-149bd48d4ced"/>
@@ -546,7 +562,7 @@
 					</textElement>
 					<text><![CDATA[Stops]]></text>
 				</staticText>
-				<textField pattern="#,###,##0" hyperlinkTarget="Blank">
+				<textField pattern="#,###,##0" hyperlinkType="ReportExecution" hyperlinkTarget="Blank">
 					<reportElement mode="Opaque" x="240" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="a8f2d328-9d05-4f68-bd47-b6045799deb5"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -558,6 +574,21 @@
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{stop_time}]]></textFieldExpression>
+					<hyperlinkParameter name="_report">
+						<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Reports/spAPQ_Rpt_Stops"]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idruntime">
+						<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="area">
+						<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="line">
+						<hyperlinkParameterExpression><![CDATA[$F{line}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idequipment">
+						<hyperlinkParameterExpression><![CDATA[$F{idequipment}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
 				</textField>
 				<textField pattern="#,##0.0%" hyperlinkTarget="Blank">
 					<reportElement mode="Opaque" x="190" y="0" width="50" height="20" backcolor="rgba(255, 0, 0, 0.78431374)" uuid="5b408dcb-e248-41d6-accb-38385d48fa89"/>
@@ -699,7 +730,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_total_count_time_label}]]></textFieldExpression>
 				</textField>
-				<textField pattern="#,###,##0">
+				<textField pattern="#,###,##0" hyperlinkType="ReportExecution" hyperlinkTarget="Blank">
 					<reportElement mode="Opaque" x="370" y="80" width="80" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="811fba25-467e-4acd-be0c-083a283926ed"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -711,6 +742,21 @@
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_start_time}]]></textFieldExpression>
+					<hyperlinkParameter name="_report">
+						<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Reports/spAPQ_Rpt_SetupAndStarts"]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idruntime">
+						<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="area">
+						<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="line">
+						<hyperlinkParameterExpression><![CDATA[$F{line}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idequipment">
+						<hyperlinkParameterExpression><![CDATA[$F{idequipment}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
 				</textField>
 				<textField pattern="#,##0.0%">
 					<reportElement mode="Opaque" x="450" y="80" width="50" height="20" backcolor="rgba(255, 255, 102, 0.78431374)" uuid="06c2f287-bce6-4813-ae53-9b36d7e7a545"/>
@@ -762,7 +808,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="14"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$F{bad_count}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{good_count}]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement mode="Opaque" x="500" y="140" width="130" height="20" backcolor="rgba(0, 204, 0, 0.78431374)" uuid="20dcc9b1-b8bc-4187-8cf3-edd5d52df9cd"/>
@@ -920,7 +966,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_iddle_time_label}]]></textFieldExpression>
 				</textField>
-				<textField pattern="#,###,##0">
+				<textField pattern="#,###,##0" hyperlinkType="ReportExecution">
 					<reportElement mode="Opaque" x="370" y="40" width="80" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="13c7a8fb-aa12-459c-b3d2-76ba77435af5"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
@@ -932,6 +978,21 @@
 						<font size="12"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_setup_time}]]></textFieldExpression>
+					<hyperlinkParameter name="_report">
+						<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Reports/spAPQ_Rpt_SetupAndStarts"]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idruntime">
+						<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="area">
+						<hyperlinkParameterExpression><![CDATA[$F{area}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="line">
+						<hyperlinkParameterExpression><![CDATA[$F{line}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
+					<hyperlinkParameter name="idequipment">
+						<hyperlinkParameterExpression><![CDATA[$F{idequipment}]]></hyperlinkParameterExpression>
+					</hyperlinkParameter>
 				</textField>
 				<textField pattern="#,##0.0%">
 					<reportElement mode="Opaque" x="450" y="40" width="50" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="c82605fa-65eb-4562-9eb8-43a9c0a5fa76"/>

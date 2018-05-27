@@ -9,6 +9,7 @@
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="305"/>
 	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="684"/>
+	<property name="ireport.jasperserver.report.resource" value="/APQ/Version2/Charts/AQP_Global_files/main_jrxml"/>
 	<queryString language="SQL">
 		<![CDATA[call `spapq_rpt_apq`(1);]]>
 	</queryString>
@@ -869,6 +870,9 @@
 						<chartLegend/>
 						<hyperlinkParameter name="_report">
 							<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Charts/AQP_Areas"]]></hyperlinkParameterExpression>
+						</hyperlinkParameter>
+						<hyperlinkParameter name="idruntime">
+							<hyperlinkParameterExpression><![CDATA[$F{idruntime}]]></hyperlinkParameterExpression>
 						</hyperlinkParameter>
 						<hyperlinkParameter name="area">
 							<hyperlinkParameterExpression><![CDATA[0]]></hyperlinkParameterExpression>
