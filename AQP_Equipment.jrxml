@@ -429,7 +429,7 @@
 						<font size="14"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{total_count}]]></textFieldExpression>
-					<hyperlinkParameter name="_reports">
+					<hyperlinkParameter name="_report">
 						<hyperlinkParameterExpression><![CDATA["/APQ/Version2/Reports/spAPQ_Rpt_Counts"]]></hyperlinkParameterExpression>
 					</hyperlinkParameter>
 					<hyperlinkParameter name="idruntime">
@@ -966,7 +966,7 @@
 					</textElement>
 					<textFieldExpression><![CDATA[$F{nom_iddle_time_label}]]></textFieldExpression>
 				</textField>
-				<textField pattern="#,###,##0" hyperlinkType="ReportExecution">
+				<textField pattern="#,###,##0" hyperlinkType="ReportExecution" hyperlinkTarget="Blank">
 					<reportElement mode="Opaque" x="370" y="40" width="80" height="20" backcolor="rgba(255, 153, 51, 0.78431374)" uuid="13c7a8fb-aa12-459c-b3d2-76ba77435af5"/>
 					<box>
 						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
